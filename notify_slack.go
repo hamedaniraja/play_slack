@@ -166,8 +166,8 @@ We can run this command in two ways:
                 default value is: ""
   
   -channel      This option identifies the public channel or private group. 
-                Examples: public channel "#elq-tf-alerts" or private group "pe-eloqua-serviceops"
-                default value is: "#elq-tf-alerts"
+                Examples: public channel "#public-chanenel-name" or private group "private-group-name"
+                default value is: ""
   
   -icon         The icon or emoji which will be used for message. 
                 Example: ":approved-9724:" or ":failed:"
@@ -183,7 +183,7 @@ We can run this command in two ways:
                 default value is: "Test Message Text"
 
 Example:
-$ ./notify_slack -action sendMessage -title "Test title" -text "This is a test." -channel "pe-eloqua-serviceops" -icon ":failed:"
+$ ./notify_slack -action sendMessage -title "Test title" -text "This is a test." -channel "channel-name" -icon ":failed:"
 `
 	fmt.Println(str)
 }
